@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+$color-white: #FFFFFF;
+$color-pink: #f47069;
+$color-pink2:rgb(232, 76, 79);
+$color-bordeau: #ba4757;
+$color-yellow: #fac664;
+
+.login {
+   background-color: $color-white; 
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+
+   
+   &__title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 50px;
+      color: $color-pink2;
+      letter-spacing: 2px;
+      font-family: "Bebas Neue", sans-serif;
+      margin-bottom: 40px;
+   }
+
+   &__form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 80%;
+      margin: 0 auto;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      padding: 50px 20px 50px 20px;
+
+      .form__input {
+         height: 40px;
+         width: 80%;
+         margin-bottom: 20px;
+         padding-left: 10px;
+         border: 2px solid $color-yellow;
+         border-radius: 3px;
+         border: 1px solid $color-yellow;
+      }
+
+      .forget {
+         position: relative;
+         top: 40px;
+         color: black;
+         text-decoration: underline;
+         margin-bottom: 20px;
+      }
+
+      .btn-login {
+         font-size: 17px;
+         padding: 0.5em 2em;
+         border: transparent;
+         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+         background: $color-pink2;
+         color: white;
+         border-radius: 4px;
+         width: 80%;
+      }
+   }
+
+   &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      width: 100%;
+   }
+   .btn-signup {
+      font-size: 17px;
+      margin: 8px;
+      padding: 0.5em 2em;
+      border: transparent;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+      border: 1px solid $color-pink2;
+      background-color: transparent;
+      color: $color-pink2;
+      border-radius: 4px;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   .login__form {
+      width: 30vw;
+   }
+   .login__logo{
+      width: 20vw;
+   }
+} 

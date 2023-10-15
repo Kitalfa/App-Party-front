@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+$color-white: #FFFFFF;
+$color-pink: #f47069;
+$color-pink2:rgb(232, 76, 79);
+$color-bordeau: #ba4757;
+$color-yellow: #fac664;
+
+.landing {
+   background-color: $color-white;
+   width: 100vw;
+
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+   }
+
+   &__logo {
+      height: 30vh;
+   }
+
+   &__button {
+      position: absolute;
+      right: 0;
+      font-size: 17px;
+      margin: 30px 15px;
+      padding: 0.5em 1em;
+      border: 3px solid white;
+      background-color: $color-pink2;
+      color: white;
+      border-radius: 14px;
+   }
+
+   &__title--main {
+      font-family: "Bebas Neue", cursive;
+      margin: auto;
+      color: $color-pink2;
+      letter-spacing: 2px;
+      font-size: 50px;
+      font-weight: bold;
+      width: 90vw;
+   }
+
+   &__section-first p {
+      margin: 15px auto;
+      width: 90vw;
+      font-weight: bold;
+      color: #a2a2a3;
+   }
+
+   &__photo--app {
+      background-image: url("../../assets/img/a\ instagram\ post\ showing\ a\ hand\ hloding\ an\ iphone.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 5vw auto;
+      height: 50vh;
+      width: 90vw;
+      border-radius: 14px;
+   }
+
+   &__photo--liste {
+      background-image: url("../../assets/img/phone2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 5vw auto;
+      height: 60vh;
+      width: 90vw;
+      border-radius: 14px;
+   }
+
+   &__section-second {
+      height: 85vh;
+      background-color: $color-white;
+   }
+
+   &__section-third {
+      height: 10vh;
+      background-color: $color-white;
+   }
+
+
+
+   &__footer {
+      background-color: $color-white;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 30px;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   .landing {
+      padding: 0 10vw;
+
+      &__logo {
+         
+         height: 40vh;
+      }
+
+      &__footer {
+         flex-direction: row;
+         justify-content: space-between;
+         gap: 2rem;
+
+      }
+
+      &__button {
+         font-size: 20px;
+         margin-right: 10%;
+         margin-top: 60px;
+      }
+
+      &__title--main {
+         font-size: 50px;
+         text-align: start;
+         padding-top: 25px;
+      }
+
+      &__section-first p {
+         font-size: 24px;
+      }
+
+      &__photo--app {
+         height: 70vh;
+         width: 30vw;
+      }
+
+      &__photo--liste {
+         height: 70vh;
+         width: 30vw;
+      }
+      &__footer--main {
+         text-align: center;
+      }
+
+
+      p {
+        text-align:start;
+      }
+   }
+}

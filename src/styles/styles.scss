@@ -1,0 +1,22 @@
+@use "reset";
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+}
+
+.App {
+   height: 100vh;
+   width: 100vw;
+}
+
+$color-white: #ffffff;
+$color-pink: #f47069;
+$color-pink2:rgb(232, 76, 79);
+$color-bordeau: #ba4757;
+$color-yellow: #fac664;

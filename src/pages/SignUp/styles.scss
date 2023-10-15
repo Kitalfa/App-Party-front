@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+$color-white: #FFFFFF;
+$color-pink: #f47069;
+$color-pink2:rgb(232, 76, 79);
+$color-bordeau: #ba4757;
+$color-yellow: #fac664;
+
+.signup {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-white;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    padding: 50px 30px;
+    border-radius: 10px;
+
+    &-title {
+      font-size: 50px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: $color-pink2;
+      letter-spacing: 2px;
+      font-family: "Bebas Neue", sans-serif;
+    }
+
+    &-input {
+      height: 40px;
+      width: 90%;
+      padding-left: 10px;
+      border: 2px solid $color-yellow;
+      border-radius: 3px;
+      
+    }
+
+    &-button {
+      height: 40px;
+      width:90%;
+      background: $color-pink2;
+      border: none;
+      border-radius: 3px;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
